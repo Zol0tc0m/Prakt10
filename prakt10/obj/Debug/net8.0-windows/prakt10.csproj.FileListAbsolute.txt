@@ -1,0 +1,4 @@
+C:\Users\User\source\repos\prakt10\prakt10\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\User\source\repos\prakt10\prakt10\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\User\source\repos\prakt10\prakt10\obj\Debug\net8.0-windows\prakt10_MarkupCompile.cache
+C:\Users\User\source\repos\prakt10\prakt10\obj\Debug\net8.0-windows\prakt10_MarkupCompile.lref

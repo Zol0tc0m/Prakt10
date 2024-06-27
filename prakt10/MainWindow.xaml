@@ -1,0 +1,146 @@
+﻿<Window x:Class="prakt10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prakt10"
+        mc:Ignorable="d"
+        Title="DoctorWindow" Height="1200" Width="1500">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static SystemCommands.MaximizeWindowCommand}" CanExecute="CanExecute" Executed="Max" />
+        <CommandBinding Command="{x:Static SystemCommands.MinimizeWindowCommand}" CanExecute="CanExecute" Executed="Hide" />
+        <CommandBinding Command="{x:Static SystemCommands.CloseWindowCommand}" CanExecute="CanExecute" Executed="Close" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Grid Grid.ColumnSpan="2" Background="#007BFE" Height="50">
+            <TextBlock Text="ЕМИАС — Васильев Георгий Игнатьевич" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="15,0,0,0" FontSize="16"/>
+            <TextBlock Text="Пациент: Иванова Ирина Ивановна" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="400,0,0,0" FontSize="16"/>
+            <TextBlock Text="Номер полиса: 7777 0000 0000 0000" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="800,0,0,0" FontSize="16"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="-" Command="{x:Static SystemCommands.MinimizeWindowCommand}" Background="White" FontSize="26" Foreground="Black"/>
+                <Button Content="□" Command="{x:Static SystemCommands.MaximizeWindowCommand}" Background="White" FontSize="20" Foreground="Black"/>
+                <Button Content="x" Command="{x:Static SystemCommands.CloseWindowCommand}" Background="White" FontSize="20" Foreground="Black"
+                        />
+            </StackPanel>
+        </Grid>
+
+        <!-- Left Menu -->
+        <StackPanel Grid.Row="1" Background="#EFEFEF">
+            <TextBlock Text="Иванова Ирина Ивановна" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Найти прием" Margin="10" Height="30"/>
+            <TextBlock Text="10:00" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="10:10" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="10:20" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="10:30" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="10:40" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="10:50" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="11:00" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <TextBlock Text="11:10" FontWeight="Bold" FontSize="16" Margin="10"/>
+            <Button Content="Отменить запись" Margin="10" Height="30" Background="Red" Foreground="White"/>
+            <Button Content="Выйти из аккаунта" Margin="10" Height="30" Background="Red" Foreground="White"/>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1" Margin="10">
+            <StackPanel>
+                <TextBlock Text="Прием:" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Жалобы" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Margin="0,0,0,10"/>
+
+                <TextBlock Text="Общий осмотр" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Margin="0,0,0,10"/>
+
+                <TextBlock Text="Основной диагноз" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Margin="0,0,0,10"/>
+
+                <TextBlock Text="Дополнения к основному диагнозу" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Margin="0,0,0,10"/>
+
+                <TextBlock Text="Рекомендации" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <TextBox Margin="0,0,0,10"/>
+
+                <TextBlock Text="Направления" Foreground="Gray" FontWeight="Bold" Margin="0,0,0,5"/>
+                <ComboBox Width="825" Margin="0,0,220,10" Height="23"/>
+
+                <Button Content="Добавить направление" Width="168" HorizontalAlignment="Right" Margin="0,0,10,10" Background="#007BFE" Foreground="White" Height="28"/>
+
+                <ListBox Margin="0,0,0,10">
+                    <!-- Directions list -->
+                    <ListBoxItem Content="Направление к специалисту: Офтальмолог" IsSelected="True"/>
+                    <Button Content="Удалить" Margin="0,0,0,10" Width="100" Background="Red" Foreground="White"/>
+                    <ListBoxItem Content="Направление к специалисту: Офтальмолог" IsSelected="True"/>
+                    <Button Content="Удалить" Margin="0,0,0,10" Width="100" Background="Red" Foreground="White"/>
+                </ListBox>
+
+                <CheckBox Content="Анализ" Height="26" Width="1171" Checked="CheckBox_Checked"/>
+                <TextBox Height="27" Width="1019"/>
+
+                <TextBlock Text="Результаты лабораторных исследований" FontWeight="Bold" Margin="0,20,0,10"/>
+                <TextBlock Text="Дата: «Дата приема»" Margin="0,0,0,10"/>
+                <TextBlock Text="Полис ОМС: «Полис пациента»" Margin="0,0,0,10"/>
+
+                <TextBlock Text="ИССЛЕДОВАНИЕ «НАЗВАНИЕ ТЕСТА»" FontWeight="Bold" FontSize="16" Margin="0,0,0,10" TextAlignment="Center"/>
+                <TextBlock Text="Клинико-диагностическая лаборатория" FontWeight="Bold" Margin="0,0,0,10" TextAlignment="Center"/>
+
+                <TextBlock Text="РЕЗУЛЬТАТЫ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ" FontWeight="Bold" FontSize="16" Margin="0,0,0,10" TextAlignment="Center"/>
+
+                <TextBlock Text="«Название теста»" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Биоматериал: «Биоматериал»" Margin="0,0,0,10"/>
+
+                <Grid Margin="0,0,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Тест" Grid.Column="0" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock Text="Результат" Grid.Column="1" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock Text="Норма" Grid.Column="2" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock Text="Отклонение" Grid.Column="3" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock Text="Критичность отклонения" Grid.Column="4" FontWeight="Bold" Margin="0,0,10,0"/>
+                    <TextBlock Text="Ед. изм." Grid.Column="5" FontWeight="Bold" Margin="0,0,10,0"/>
+
+                    <!-- Add more rows here as needed -->
+                </Grid>
+
+                <TextBlock Text="Протокол «Название исследования»" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Информация Предварительный диагноз: «Название диагноза, подтвердить из выбора диагноза выше»" Margin="0,0,0,10"/>
+                <TextBlock Text="Цель исследования: «Цель исследования»" Margin="0,0,0,10"/>
+                <TextBlock Text="Обоснование: «Обоснование»" Margin="0,0,0,10"/>
+                <TextBlock Text="Дата исследования: «Дата проведения исследования»" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Описание" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Здесь следует описание исследования с подробностями, подобное тому, что показано на вашем скриншоте." Margin="0,0,0,10"/>
+
+                <TextBlock Text="Заключение" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Патологические изменения и особенности органов и тканей." Margin="0,0,0,10"/>
+
+                <TextBlock Text="Оборудование: «Название устройства (название эндоскопического комплекта), регистрационный номер»" Margin="0,0,0,10"/>
+
+                <Button Content="Прикрепить дополнительные файлы" Width="250" Margin="0,0,0,10" Background="#007BFE" Foreground="White"/>
+                <Button Content="Завершить прием" Width="250" Margin="0,0,0,10" Background="#007BFE" Foreground="White"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\prakt10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9F72BD-8A12-4A3B-B653-0285ADD6AA90}|prakt10\\prakt10.csproj|c:\\users\\user\\source\\repos\\prakt10\\prakt10\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B9F72BD-8A12-4A3B-B653-0285ADD6AA90}|prakt10\\prakt10.csproj|solutionrelative:prakt10\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9F72BD-8A12-4A3B-B653-0285ADD6AA90}|prakt10\\prakt10.csproj|c:\\users\\user\\source\\repos\\prakt10\\prakt10\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9F72BD-8A12-4A3B-B653-0285ADD6AA90}|prakt10\\prakt10.csproj|solutionrelative:prakt10\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 338,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\prakt10\\prakt10\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "prakt10\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\prakt10\\prakt10\\MainWindow.xaml",
+              "RelativeToolTip": "prakt10\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-26T19:04:48.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\prakt10\\prakt10\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "prakt10\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\prakt10\\prakt10\\MainWindow.xaml.cs",
+              "RelativeToolTip": "prakt10\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T19:04:45.093Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
